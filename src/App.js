@@ -16,7 +16,7 @@ const App =()=>{
     <BrowserRouter>
     <Menu/>
   
-  <Searchbar/>
+  
     <Switch>
     <Route path='/' exact component={Home}/>
         <Route path='/signUp'  component={signUp}/>
