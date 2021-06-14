@@ -5,13 +5,10 @@ import * as Icons from "react-icons/bs";
 const Searchbar =()=>{
     return(
         <div className="container">
-        <div className="Icon">
-            
-            <input placeholder="search.." className="search"></input>
-          </div> 
-          <div className="Icon">
-           <Icons.BsSearch size={20}/>
-           </div>
+      <input placeholder="search.." className="search"></input>
+       
+        <Icons.BsSearch size={20} className="Icon"/>
+        
         </div>
         
         
