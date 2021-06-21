@@ -1,46 +1,51 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './card.css';
 import Button from './Button';
 import * as Icons from "react-icons/io";
 import {useHistory} from 'react-router-dom';
 
+import Menu from '../Components/Sidebar/Menu';
+
 const Home =()=>{
   let history=useHistory();
+  let cardhistory1 =useHistory();
+  let favorites=useHistory();
+  let happy = useHistory();
 return(
        <div>
+         <Menu/>
            <div className="button">
            <Button
        border="black"
        color="white"
        height = "60px"
-       onClick={() =>{history.push("/restaurants")}}
+       onClick={() =>{history.push("/Berymo_selected")}}
        radius = "20"
        width = "300px"
        fontSize ="20px"
        children = " BERYMO SELECTED >"
       
       />
-      
-         </div>
-         
-         
-         <div className="card">
-             <div className="header">
-             <img src={require('../assets/download.jpeg').default} alt=""></img>
+      </div>
+        
+         <div className="card" onClick={()=>{cardhistory1.push("/Dish")}}>
+             <div className="card-header2" >
+             <img src={require('../assets/download.jpeg').default} alt="" ></img>
              </div>
                 <div className="card-body">
                   <div className="item-data">
                       Cream Stone
                   </div>
                 </div>
-                
                 </div>
-                <div className="button2">
+                
+                <div className="button">
            <Button
        border="none"
        color="white"
        height = "60px"
-       onClick={() => console.log("You clicked on the pink circle!")}
+       onClick={() =>{favorites.push("/Your_favorites")}}
+       
        radius = "20"
        width = "300px"
        fontSize ="20px"
@@ -59,12 +64,13 @@ return(
                 </div>
              
              </div>
-             <div className="button3">
+             <div className="button">
            <Button
        border="none"
        color="white"
        height = "60px"
-       onClick={() => console.log("You clicked on the pink circle!")}
+       onClick={() =>{happy.push("/Happy_hours")}}
+       
        radius = "20"
        width = "300px"
        fontSize ="20px"
@@ -78,12 +84,12 @@ return(
              </div>
                 <div className="card-body">
                   <div className="item-data">
-                      Shawarma House
+                      Frankie House
                   </div>
                 </div>
              
              </div>
-             <div className="button3">
+             <div className="button">
            <Button
        border="none"
        color="white"
@@ -106,10 +112,9 @@ return(
                   </div>
                 </div>
              
-             </div>
+</div>
 
-             
-        </div>
+  </div>
         
         
 )

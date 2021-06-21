@@ -1,0 +1,11 @@
+.slide{
+    height:100px;
+    margin-left: 1rem;
+    width:90%;
+    box-shadow:0px 0px 15px -5px black;
+    overflow:hidden;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+   }
+   

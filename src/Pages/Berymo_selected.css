@@ -1,0 +1,35 @@
+.Container{
+   
+    height:285px;
+    border-radius: 2rem;
+    width:350px;
+    
+    margin-left:0.5rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 15px -5px;
+    
+}
+
+.item1 img{
+    height:200px;
+    width:350px;
+    border-radius: 2rem;
+   
+    
+    }
+
+
+.item1 :hover{
+    transform:scale(1);
+}
+.back{
+    margin-left: 1rem;
+    font-size: 2rem;
+    background: none;
+    margin-top: 1rem;
+}
+.label{
+    margin-left: 2rem;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

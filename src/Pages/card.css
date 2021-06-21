@@ -1,49 +1,40 @@
 .card{
-    margin-left: 30rem;
+    margin-left: 1rem;
      box-shadow: 0px 0px 15px -5px;
-     width: 400px;
+     width: 360px;
      border-radius:2rem;
      height:300px;
      margin-top: 3rem;
+     display: flex;
+     cursor: pointer;
+     justify-content: center;
+    }
 
-     
-     
-}
-.header img{
-    width:400px;
-   border-radius: 2rem;
-   margin-left: 0rem;
-   
-}
 .button{
     border:1px  black;
-    margin-left:32rem;
+    margin-left:2rem;
     box-shadow: 0px 0px 15px -5px;
-    width: 270px;
+    width: 300px;
+    margin-top: 2rem;
 }
 .card-header2 img{
 
-    width:400px;
+    width:360px;
    border-radius: 2rem;
    margin-left: 0rem;
    height:230px;
+   justify-content: safe;
+   align-items: center;
+   
    
 }
-.button2{
-    margin-top: 2rem;
-    border:1px  black;
-    margin-left:32rem;
-    box-shadow: 0px 0px 15px -5px;
-    width: 270px;
-}
+
 .item-data{
     margin-left: 1rem;
     font-size: 16px;
 }
-.button3{
-    margin-top: 2rem;
-    border:1px  black;
-    margin-left:32rem;
-    box-shadow: 0px 0px 15px -5px;
-    width: 270px;
+
+.card:hover{
+    opacity: 0.3;
 }
+
